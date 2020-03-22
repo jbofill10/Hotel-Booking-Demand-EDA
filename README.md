@@ -25,5 +25,5 @@ I was surprised to see that so many people in city hotels chose BB. Also interes
 ## What Countries are Booking the most Hotels
 I create a chart to see what counties were the bookings coming from the most.
 ![alt text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/BookingsAroundTheWorld.png)
-Clearly, it seems that a majority of the bookings are coming from Europe. My guess is that the data set comes from Portugal (since it is just a hotel booking data set and doesn't say where it's from)
+Clearly, it seems that a majority of the bookings are coming from Europe. My guess is that the data set comes from Portugal (since it is just a hotel booking data set and doesn't say where it's from). The chart is a plotly chart, and since I am not using Jupyter nb I cannot embed the interactive chart like I would've hoped for.
 
