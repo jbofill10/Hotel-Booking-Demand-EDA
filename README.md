@@ -17,6 +17,10 @@ It seems that this data set contains more resort hotel bookings over city hotel 
 ![alt text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/bookings2017.png)
 Not sure if the three months missing are just due to the data set not having them, or is it a case that the hotel wasn't available/open/booked. Nevertheless, I could see that being problematic for future plans that I had to predicite bookings. Other than that, I was surprised that the bookings throughout the year were about the same, expect for December. I expected the earlier months in the year to have less bookings.
 
+### City Hotels
+![alt text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/city_bookings2017.png)
+It's interesting to me that Resort Hotels has a steadier booking trend than city hotels. I understand the spike during the summer is probably due to tourism, but I would that the same would apply to resort hotels. I guess rich people vacation whenver they want (satire)
+
 ## Meal plans chosen
 
 ![alt text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/MealTypes.png)
@@ -32,3 +36,15 @@ I create a chart to see what counties were the bookings coming from the most.
 ![alt text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/BookingsAroundTheWorld.png)
 Clearly, it seems that a majority of the bookings are coming from Europe. My guess is that the data set comes from Portugal (since it is just a hotel booking data set and doesn't say where it's from). The chart is a plotly chart, and since I am not using Jupyter nb I cannot embed the interactive chart like I would've hoped for.
 
+
+
+
+# Logistic Regression
+My first attempt at creating a predictive ML model for the prediction of whether a booking cancelation would occur or not.
+
+I basically applied **One Hot Coding** to all the different columns which I thought would play influence on cancelations and then fitted it to the model.
+
+The results were somewhat disappointing, as I scored:
+![alt text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/ModelScores.png)
+
+The confusion matrix has 1355 false positives and 3013 false negatives. I thought hard about what could be causing this, but I am not sure. One column, reservation_status, causes a huge data lake and causes my score to be 100% -- so I removed that from the dataframe completely. 
