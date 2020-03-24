@@ -15,7 +15,7 @@ def hotel_meals_visualization(df):
     city_meal_plans = city_meal_plans.groupby(['hotel'])['meal'].value_counts()
 
     # Add undefined row since there were no entries for it in city hotels
-    city_meal_plans.loc[('City Hotel', 'Undefined')] = (0)
+    city_meal_plans.loc[('City Hotel', 'Undefined')] = 0
 
     fig, axs = plt.subplots(ncols=2)
 
