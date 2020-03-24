@@ -25,4 +25,5 @@ def resort_timespan_visualizations(df):
     plt.xlabel("Month", fontsize=18, color='black')
     plt.ylabel("Arrivals", fontsize=18, color='black')
     plt.title("Bookings Throughout 2017", fontsize=22)
+    #plt.savefig('./Data Visualization/bookings2017.png')
     plt.show()
