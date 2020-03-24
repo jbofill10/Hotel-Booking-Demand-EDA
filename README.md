@@ -36,8 +36,14 @@ I create a chart to see what counties were the bookings coming from the most.
 ![alt text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/BookingsAroundTheWorld.png)
 Clearly, it seems that a majority of the bookings are coming from Europe. My guess is that the data set comes from Portugal (since it is just a hotel booking data set and doesn't say where it's from). The chart is a plotly chart, and since I am not using Jupyter nb I cannot embed the interactive chart like I would've hoped for.
 
+## What Countries has the Most Families with Babies that Book Hotels  
+I don't know why I was curious about this, so I categorized these discoveries under "weird_trends" in my project directory.
 
+## Resort Hotels
+![alt_text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/BabiesResort.png)
 
+### City Hotels
+![alt_text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/BabyCity.png)
 
 # Logistic Regression
 My first attempt at creating a predictive ML model for the prediction of whether a booking cancelation would occur or not.
