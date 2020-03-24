@@ -8,8 +8,8 @@ import BookingsWorldWide as bookings
 
 from booking_timespans import CityHotelBookingTimeSpan as city_timespan
 from booking_timespans import ResortHotelBookingTimeSpan as resort_timespan
-
-from tqdm import tqdm
+from weird_trends import Babies as babies
+from machine_learning import LogisticRegression as lg
 
 
 def main():
@@ -19,6 +19,11 @@ def main():
     style.use('ggplot')
 
     h_t.hotel_meals_visualization(df)
+    city_timespan.city_timespan_visualizations(df[df.hotel == 'City Hotel'])
+    babies.babies_2017(df)
+    lg.log_reg(df)
+
+
     bookings.booking_visualization(df)
 
     resort_timespan.resort_timespan_visualizations(df[df.hotel == 'Resort Hotel'])

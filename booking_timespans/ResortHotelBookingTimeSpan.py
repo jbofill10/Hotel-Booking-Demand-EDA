@@ -20,7 +20,7 @@ def resort_timespan_visualizations(df):
     # Sort index again
     bookings_2017_df=bookings_2017_df.sort_index()
 
-    sns.barplot(x=list(bookings_2017_df['arrival_date_month'].index), y=list(bookings_2017_df['arrival_date_month'].values), data=bookings_2017_df)
+    sns.barplot(x=list(bookings_2017_df['arrival_date_month'].index), y=list(bookings_2017_df['arrival_date_month'].values))
     plt.xticks(range(0,13), ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
     plt.xlabel("Month", fontsize=18, color='black')
     plt.ylabel("Arrivals", fontsize=18, color='black')
