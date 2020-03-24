@@ -44,7 +44,10 @@ My first attempt at creating a predictive ML model for the prediction of whether
 
 I basically applied **One Hot Coding** to all the different columns which I thought would play influence on cancelations and then fitted it to the model.
 
-The results were somewhat disappointing, as I scored:
-![alt text](https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/ModelScores.png)
+The results were somewhat disappointing, as I scored:  
+
+<p align="center">
+  <img src="https://github.com/jbofill10/Hotel-Booking-Demand-EDA/blob/master/Data%20Visualization/ModelScores.png">
+</p>
 
 The confusion matrix has 1355 false positives and 3013 false negatives. I thought hard about what could be causing this, but I am not sure. One column, reservation_status, causes a huge data lake and causes my score to be 100% -- so I removed that from the dataframe completely. 
